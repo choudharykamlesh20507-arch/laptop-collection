@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create Account | AutoTech</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<div class="auth-shell">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">AT</span><span>Auto<span class="accent">Tech</span></span></a>
+  <div class="auth-card">
+    <div class="auth-heading"><span class="eyebrow">JOIN THE COMMUNITY</span><h1>Create your account</h1><p>Save your preferences and explore your favourite models.</p></div>
+    <form id="registerForm" novalidate>
+      <label>Full Name<input id="regName" type="text" placeholder="Your name"><small class="error" id="regNameError"></small></label>
+      <label>Email<input id="regEmail" type="email" placeholder="you@example.com"><small class="error" id="regEmailError"></small></label>
+      <label>Password<input id="regPassword" type="password" placeholder="Minimum 6 characters"><small class="error" id="regPasswordError"></small></label>
+      <label>Confirm Password<input id="regConfirm" type="password" placeholder="Repeat password"><small class="error" id="regConfirmError"></small></label>
+      <label class="check"><input id="terms" type="checkbox"> I agree to the demo terms.</label>
+      <button class="btn btn-primary full" type="submit">Create Account</button>
+      <p class="success" id="registerSuccess"></p>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+    <p class="demo-note">Demo only: no database is connected. Data uses localStorage.</p>
+  </div>
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>

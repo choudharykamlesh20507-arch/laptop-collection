@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login | AutoTech</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<div class="auth-shell">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">AT</span><span>Auto<span class="accent">Tech</span></span></a>
+  <div class="auth-card">
+    <div class="auth-heading"><span class="eyebrow">WELCOME BACK</span><h1>Login to AutoTech</h1><p>Access your frontend demo account and saved experience.</p></div>
+    <form id="loginForm" novalidate>
+      <label>Email<input id="loginEmail" type="email" placeholder="you@example.com"><small class="error" id="loginEmailError"></small></label>
+      <label>Password<input id="loginPassword" type="password" placeholder="Minimum 6 characters"><small class="error" id="loginPasswordError"></small></label>
+      <button class="btn btn-primary full" type="submit">Login</button>
+      <p class="success" id="loginSuccess"></p>
+    </form>
+    <p class="auth-switch">Don't have an account? <a href="register.html">Create one</a></p>
+    <p class="demo-note">Demo only: no database is connected. Account data is stored locally in your browser.</p>
+  </div>
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>
